@@ -10,9 +10,9 @@ import { eventBus } from "../main.js"
 export default {
   name: "TopicItem",
   props: ["item"],
-  methods(){
+  methods: {
     handleClick(){
-      eventBus.$emit("item-clicked", item)
+      eventBus.$emit("item-clicked", this.item)
     }
   }
 
