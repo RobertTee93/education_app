@@ -1,12 +1,13 @@
 <template lang="html">
   <div>
     <topic-nav></topic-nav>
-
+    <start-page></start-page>
   </div>
 
 </template>
 
 <script>
+import StartPage from "./components/StartPage.vue"
 import { eventBus} from "./main.js";
 import TopicNav from "./components/TopicNav.vue"
 export default {
@@ -23,7 +24,8 @@ export default {
     });
   },
   components: {
-    TopicNav
+    TopicNav,
+    StartPage
   }
 
 }
