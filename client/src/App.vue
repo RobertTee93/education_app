@@ -1,8 +1,11 @@
 <template lang="html">
-
+  <div>
+    <start-page></start-page>
+  </div>
 </template>
 
 <script>
+import StartPage from "./components/StartPage.vue"
 import { eventBus} from "./main.js";
 export default {
   name: "app",
@@ -13,7 +16,10 @@ export default {
     }
   },
   mounted(){
-    
+
+  },
+  components: {
+    StartPage
   }
 }
 </script>
