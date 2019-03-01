@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <topic-nav></topic-nav>
-    <start-page></start-page>
+    <start-page v-if="!topicItems"></start-page>
     <topics-grid :topicItems="topicItems"></topics-grid>
   </div>
 
@@ -16,7 +16,7 @@ export default {
   name: "app",
   data(){
     return {
-      topicItems: [],
+      topicItems: null,
       selectedItem: null
     }
   },
