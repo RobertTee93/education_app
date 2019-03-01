@@ -2,11 +2,13 @@
   <div>
     <topic-nav></topic-nav>
     <start-page></start-page>
+    <topics-grid :topicItems="topicItems"></topics-grid>
   </div>
 
 </template>
 
 <script>
+import TopicsGrid from "./components/TopicsGrid.vue"
 import StartPage from "./components/StartPage.vue"
 import { eventBus} from "./main.js";
 import TopicNav from "./components/TopicNav.vue"
@@ -25,7 +27,8 @@ export default {
   },
   components: {
     TopicNav,
-    StartPage
+    StartPage,
+    TopicsGrid
   }
 
 }
