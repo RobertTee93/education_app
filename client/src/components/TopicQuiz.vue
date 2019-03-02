@@ -1,13 +1,13 @@
 <template lang="html">
   <div>
     <button v-on:click="fetchQuestions">Start Quiz</button>
-    <question v-if="currentQuestion" :question="currentQuestion"/> 
+    <question v-if="currentQuestion" :question="currentQuestion"></question>
   </div>
 
 </template>
 
 <script>
-// import Question from "./Question.vue"
+import Question from "./Question.vue"
 import { eventBus } from "../main.js"
 export default {
   name: "TopicQuiz",
@@ -28,10 +28,11 @@ export default {
       .then(() => {
         this.getCurrentQuestions()
         this.getNextQuestion()
-      })
+      });
       eventBus.$on("next-question",() =>{
-        this.getNextQuestion()
-      })
+       this.getNextQuestion()
+     })
+
     },
     getCurrentQuestions(){
       while (this.currentQuestions.length < 6){
@@ -42,12 +43,11 @@ export default {
 
       }
     },
-
     getNextQuestion(){
       this.currentQuestion = this.currentQuestions.pop()
     }
   },
-  components:{
+  components: {
     Question
   }
 }
