@@ -24,7 +24,8 @@ export default {
     return {
       topicItems: null,
       selectedItem: null,
-      quizStarted: false
+      quizStarted: false,
+      categorySelected: null
     }
   },
   mounted(){
@@ -39,8 +40,9 @@ export default {
     eventBus.$on("reset-selected", () => {
       this.selectedItem = null;
     });
-    eventBus.$on("start-quiz", ()=>{
+    eventBus.$on("start-quiz", (category)=>{
       this.quizStarted = true;
+      this.categorySelected = category
     })
 
 

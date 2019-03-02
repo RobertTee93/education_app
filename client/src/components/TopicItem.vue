@@ -1,11 +1,8 @@
 <template lang="html">
-<div>
   <div v-on:click="handleClick">
     <h2>{{ item.species }}</h2>
     <img :src="item.picture" alt="no image available">
-  </div>
-  <button v-on:click="startQuiz">Start Quiz</button>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -16,10 +13,8 @@ export default {
   methods: {
     handleClick(){
       eventBus.$emit("item-clicked", this.item)
-    },
-      startQuiz(){
-        eventBus.$emit("start-quiz")
-      }
+    }
+     
   }
 
 }

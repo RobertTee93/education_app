@@ -37,7 +37,7 @@ db.sharks.insertMany([
   {
     species: "Bull",
     diet: "The Bull shark eats bony fish and small sharks and stingrays. ",
-    size: "3.5",
+    size: "3.5m",
     picture: "src/assets/shark_pictures/bull_shark.jpg",
     habitat: "The bull shark is commonly found worldwide in coastal areas of warm oceans, in rivers and lakes.",
     fact: "Bull sharks have the strongest bite of all the sharks"

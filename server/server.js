@@ -17,7 +17,7 @@ MongoClient.connect('mongodb://localhost:27017')
         const sharksRouter = createRouter(sharksCollection);
         const sharkQuestionsRouter = createRouter(sharkQuestions);
         app.use('/api/sharks', sharksRouter);
-        app.use('/api/shark_questions',sharkQuestions);
+        app.use('/api/shark_questions',sharkQuestionsRouter);
     })
 .catch(console.err);
 
