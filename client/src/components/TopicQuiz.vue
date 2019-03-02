@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Question from "./Question.vue"
+// import Question from "./Question.vue"
 import { eventBus } from "../main.js"
 export default {
   name: "TopicQuiz",
@@ -33,8 +33,10 @@ export default {
     getCurrentQuestions(){
       while (this.currentQuestions.length < 6){
         const question = this.allQuestions[Math.floor(Math.random()*this.allQuestions.length)]
-        this.allQuestions.pop(question)
-        this.currentQuestions.push(question)
+        if (!this.currentQuestions.includes(question)){
+          this.currentQuestions.push(question)
+        }
+
       }
     },
     getNextQuestion(){
