@@ -8,7 +8,7 @@ db.sharks.insertMany([
     size: "Female: 4.5 – 6.4 m (Adult), Male: 3.5 – 4 m (Adult)",
     picture: "src/assets/shark_pictures/Great_white_shark.jpg",
     habitat: "Great white sharks live in coastal and offshore water of between 12 to 24 degrees",
-    Fact: "The great white is at the top of the food chain and has few threats in the ocean."
+    fact: "The great white is at the top of the food chain and has few threats in the ocean."
   },
   {
     species: "Great Hammerhead",
@@ -16,7 +16,7 @@ db.sharks.insertMany([
     size: "6m",
     picture: "src/assets/shark_pictures/great_hammerhead.jpg",
     habitat: "In tropical and warm waters worldwide, inhabiting coastal areas.",
-    Fact: "The Great Hammerhead weighs about the same as a piano."
+    fact: "The Great Hammerhead weighs about the same as a piano."
   },
   {
     species: "Tiger",
@@ -24,7 +24,7 @@ db.sharks.insertMany([
     size: "5m",
     picture: "src/assets/shark_pictures/tiger_shark.jpg",
     habitat: "Tiger sharks found in tropical and warm water seas.",
-    Fact: "Tiger sharks are named that way because of their tiger-like, black stripes that cover the body of young animals"
+    fact: "Tiger sharks are named that way because of their tiger-like, black stripes that cover the body of young animals"
   },
   {
     species: "Whale",
@@ -32,7 +32,7 @@ db.sharks.insertMany([
     size: "10m",
     picture: "src/assets/shark_pictures/whale_shark.jpg",
     habitat: "The whale shark inhabits all tropical and warm-temperate seas.",
-    Fact: " Whale sharks have about 3,000 tiny teeth but they don't use those teeth to eat."
+    fact: " Whale sharks have about 3,000 tiny teeth but they don't use those teeth to eat."
   },
   {
     species: "Bull",
@@ -40,7 +40,7 @@ db.sharks.insertMany([
     size: "3.5",
     picture: "src/assets/shark_pictures/bull_shark.jpg",
     habitat: "The bull shark is commonly found worldwide in coastal areas of warm oceans, in rivers and lakes.",
-    Fact: "Bull sharks have the strongest bite of all the sharks"
+    fact: "Bull sharks have the strongest bite of all the sharks"
   },
   {
     species: "Blue",
@@ -48,6 +48,6 @@ db.sharks.insertMany([
     size: "3m",
     picture: "src/assets/shark_pictures/blue_shark.jpg",
     habitat: "The blue shark is found worldwide in deep temperate and tropical water",
-    Fact: "Blue sharks live in groups called Schools"
+    fact: "Blue sharks live in groups called Schools"
     }
 ]);
