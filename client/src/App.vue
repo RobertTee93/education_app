@@ -23,7 +23,8 @@ export default {
   data(){
     return {
       topicItems: null,
-      selectedItem: null
+      selectedItem: null,
+      quizStarted: false
     }
   },
   mounted(){
@@ -37,7 +38,11 @@ export default {
 
     eventBus.$on("reset-selected", () => {
       this.selectedItem = null;
+    });
+    eventBus.$on("start-quiz", ()=>{
+      this.quizStarted = true;
     })
+
 
   },
   components: {
