@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import { eventBus } from "../main.js"
 import TopicItem from './TopicItem.vue'
 export default {
     name: 'topicsGrid',
@@ -18,7 +19,7 @@ export default {
         eventBus.$emit("start-quiz", category)
       }
     }
-    
+
 };
 </script>
 
