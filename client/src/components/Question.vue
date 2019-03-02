@@ -26,8 +26,10 @@ export default {
     checkAnswer(answer){
       if (answer === this.question.correct_answer){
         this.correctAnswer = true
+        eventBus.$emit("correct-answer")
       } else {
         this.correctAnswer = false
+        eventBus.$emit("wrong-answer")
       }
     }
   }
