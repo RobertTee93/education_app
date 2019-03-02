@@ -4,9 +4,9 @@
 
     <start-page v-if="!topicItems"></start-page>
 
-    <topics-grid v-if="!selectedItem" :topicItems="topicItems"></topics-grid>
+    <topics-grid v-if="!selectedItem && !quizStarted" :topicItems="topicItems"></topics-grid>
 
-    <topic-detail v-if="selectedItem" :item="selectedItem"></topic-detail>
+    <topic-detail v-if="selectedItem && !quizStarted" :item="selectedItem"></topic-detail>
 
   </div>
 
@@ -40,9 +40,14 @@ export default {
     eventBus.$on("reset-selected", () => {
       this.selectedItem = null;
     });
+
     eventBus.$on("start-quiz", (category)=>{
       this.quizStarted = true;
       this.categorySelected = category
+    });
+
+    eventBus.$on("topic-selected", () => {
+      this.resetQuiz()
     })
 
 
@@ -52,6 +57,12 @@ export default {
     StartPage,
     TopicsGrid,
     TopicDetail
+  },
+  methods: {
+    resetQuiz(){
+      this.quizStarted = false
+      this.categorySelected = null
+    }
   }
 
 }

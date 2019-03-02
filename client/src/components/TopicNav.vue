@@ -18,6 +18,8 @@ fetchDataSharks(){
     .then(res => res.json())
     .then(sharks => eventBus.$emit('sharks', sharks));
 
+		eventBus.$emit("topic-selected")
+
 }
 }
 }
