@@ -2,7 +2,7 @@
   <div>
     <h2> Score: {{ this.score }} Questions Answered: {{ this.questionCounter }} out of 6</h2>
     <button v-on:click="fetchQuestions">Start Quiz</button>
-    <question v-if="currentQuestion" :answers="currentAnswers" :question="currentQuestion"></question>
+    <question v-if="currentQuestion" :answers="currentAnswers" :question="currentQuestion" :counter="questionCounter"></question>
   </div>
 
 </template>
