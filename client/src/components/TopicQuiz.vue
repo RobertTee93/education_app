@@ -7,7 +7,7 @@
 </template>
 
 <script>
-// import Question from "./Question.vue"
+import Question from "./Question.vue"
 import { eventBus } from "../main.js"
 export default {
   name: "TopicQuiz",
