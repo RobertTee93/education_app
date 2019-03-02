@@ -1,5 +1,6 @@
 <template lang="html">
   <div>
+    <h2> Score: {{ this.score }} Questions Answered: {{ this.questionCounter }} out of 6</h2>
     <button v-on:click="fetchQuestions">Start Quiz</button>
     <question v-if="currentQuestion" :answers="currentAnswers" :question="currentQuestion"></question>
   </div>
@@ -16,6 +17,7 @@ export default {
       allQuestions: null,
       currentQuestions: [],
       currentAnswers: [],
+      questionCounter: 0,
       score: 0,
       currentQuestion: null
     }
@@ -32,6 +34,18 @@ export default {
       });
       eventBus.$on("next-question",() =>{
        this.getNextQuestion()
+     })
+      eventBus.$on("correct-answer",() =>{
+        if (this.questionCounter < 6){
+          this.score += 1
+          this.questionCounter += 1
+        }
+
+     })
+      eventBus.$on("wrong-answer",() =>{
+        if (this.questionCounter < 6){
+          this.questionCounter += 1
+        }
      })
 
     },
@@ -51,9 +65,12 @@ export default {
       this.currentAnswers = answersArray
     },
     getNextQuestion(){
-      this.currentQuestion = this.currentQuestions.pop()
-      this.getCurrentAnswers()
-      eventBus.$emit("new-answer")
+      if (this.questionCounter < 6){
+        this.currentQuestion = this.currentQuestions.pop()
+        this.getCurrentAnswers()
+        eventBus.$emit("new-answer")
+      }
+
 
     }
   },

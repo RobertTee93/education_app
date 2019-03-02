@@ -31,6 +31,7 @@ export default {
         this.correctAnswer = false
         eventBus.$emit("wrong-answer")
       }
+      this.nextQuestion()
     }
   }
 }
