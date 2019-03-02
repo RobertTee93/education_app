@@ -51,3 +51,105 @@ db.sharks.insertMany([
     fact: "Blue sharks live in groups called Schools"
     }
 ]);
+db.shark_questions.insertMany([
+  {
+    category: "Shark",
+    question:"What does the Great Hammerhead shark weigh the same as? ",
+    correct_answer: "Piano",
+    incorrect_answers: [
+      "Feather",
+      "Brick",
+      "Chair"
+    ]
+  },
+  {
+    category: "Shark",
+    question:"What do you call a group of Blue Sharks?",
+    correct_answer: "School",
+    incorrect_answers: [
+      "Team",
+      "Class",
+      "Pack"
+    ]
+  },
+  {
+    category: "Shark",
+    question:"Which shark has the strongest bite?",
+    correct_answer: "Bull Shark",
+    incorrect_answers: [
+      "Whale Shark",
+      "Great White Shark",
+      "Tiger Shark"
+    ]
+  },
+  {
+    category: "Shark",
+    question:"Which shark is top of the food chain?",
+    correct_answer: "Great White Shark",
+    incorrect_answers: [
+      "Bull Shark",
+      "Blue Shark",
+      "Whale Shark"
+    ]
+  },
+  {
+    category: "Shark",
+    question:"How may teeth does the Whale Shark have?",
+    correct_answer: "3000",
+    incorrect_answers: [
+      "3",
+      "30",
+      "300"
+    ]
+  },
+  {
+    category: "Shark",
+    question:"What is a Great Hammerhead's favourite food?",
+    correct_answer: "Stingrays",
+    incorrect_answers: [
+      "Cheese",
+      "Garbage",
+      "Squid"
+    ]
+  },
+  {
+    category: "Shark",
+    question:"Where in the world can Blue Shark be found?",
+    correct_answer: "Worldwide",
+    incorrect_answers: [
+      "Africa",
+      "North America",
+      "Europe"
+    ]
+  },
+  {
+    category: "Shark",
+    question:"Which shark is the biggest?",
+    correct_answer: "Whale Shark",
+    incorrect_answers: [
+      "Tiger Shark",
+      "Great White",
+      "Blue Shark"
+    ]
+  },
+  {
+    category: "Shark",
+    question:"Where does the Tiger Shark get it's name?",
+    correct_answer: "It has black stripes on it's body when it is young",
+    incorrect_answers: [
+      "It is orange",
+      "It has whiskers",
+      "It has a loud roar"
+    ]
+  },
+  {
+    category: "Shark",
+    question:"What type of feeder is a Whale Shark?",
+    correct_answer: "Filter",
+    incorrect_answers: [
+      "Angry",
+      "Frantic",
+      "Lazy"
+    ]
+  }
+]);
