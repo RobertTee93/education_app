@@ -1,11 +1,11 @@
 <template lang="html">
   <div>
-    <h1>{{ item.species }}</h1>
+    <h1>Species: {{ item.species }}</h1>
     <img :src="item.picture" alt="no image available">
-    <p>{{ item.fact }}</p>
-    <p>{{ item.size }}</p>
-    <p>{{ item.diet }}</p>
-    <p>{{ item.habitat }}</p>
+    <p>Fact: {{ item.fact }}</p>
+    <p>Size: {{ item.size }}</p>
+    <p>Diet: {{ item.diet }}</p>
+    <p>Habitat: {{ item.habitat }}</p>
     <button v-on:click="resetSelected">Show all</button>
   </div>
 </template>
@@ -24,4 +24,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+img {
+  width: 300px;
+}
+
 </style>
