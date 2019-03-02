@@ -3,7 +3,7 @@ db.dropDatabase();
 
 db.sharks.insertMany([
   {
-    category: "Shark",
+    category: "shark",
     species: "Great White",
     diet: "Prey upon fish (e.g. tuna, rays, other sharks), cetaceans (i.e., dolphins, porpoises, whales), pinnipeds (e.g. seals, fur seals, and sea lions), sea turtles, sea otters and seabirds.",
     size: "Female: 4.5 – 6.4 m (Adult), Male: 3.5 – 4 m (Adult)",
@@ -12,7 +12,7 @@ db.sharks.insertMany([
     fact: "The great white is at the top of the food chain and has few threats in the ocean."
   },
   {
-    category: "Shark",
+    category: "shark",
     species: "Great Hammerhead",
     diet: "Fish (including other sharks), squid, octopus, and crustaceans. Stingrays are their favorite.",
     size: "6m",
@@ -21,7 +21,7 @@ db.sharks.insertMany([
     fact: "The Great Hammerhead weighs about the same as a piano."
   },
   {
-    category: "Shark",
+    category: "shark",
     species: "Tiger",
     diet: "The Tiger shark has the widest diet of any sharks. This includes crustaceans, fish, seals, birds, squid, turtles, sea snakes, dolphins and sometimes smaller sharks",
     size: "5m",
@@ -30,7 +30,7 @@ db.sharks.insertMany([
     fact: "Tiger sharks are named that way because of their tiger-like, black stripes that cover the body of young animals"
   },
   {
-    category: "Shark",
+    category: "shark",
     species: "Whale",
     diet: "The Whale Shark is filter feeder. They only on plankton and small fishes",
     size: "10m",
@@ -39,7 +39,7 @@ db.sharks.insertMany([
     fact: " Whale sharks have about 3,000 tiny teeth but they don't use those teeth to eat."
   },
   {
-    category: "Shark",
+    category: "shark",
     species: "Bull",
     diet: "The Bull shark eats bony fish and small sharks and stingrays. ",
     size: "3.5",
@@ -48,7 +48,7 @@ db.sharks.insertMany([
     fact: "Bull sharks have the strongest bite of all the sharks"
   },
   {
-    category: "Shark",
+    category: "shark",
     species: "Blue",
     diet: "Blue Sharks feed on small fish and squid",
     size: "3m",
@@ -59,7 +59,7 @@ db.sharks.insertMany([
 ]);
 db.shark_questions.insertMany([
   {
-    category: "Shark",
+    category: "shark",
     question:"What does the Great Hammerhead shark weigh the same as? ",
     correct_answer: "Piano",
     incorrect_answers: [
@@ -69,7 +69,7 @@ db.shark_questions.insertMany([
     ]
   },
   {
-    category: "Shark",
+    category: "shark",
     question:"What do you call a group of Blue Sharks?",
     correct_answer: "School",
     incorrect_answers: [
@@ -79,7 +79,7 @@ db.shark_questions.insertMany([
     ]
   },
   {
-    category: "Shark",
+    category: "shark",
     question:"Which shark has the strongest bite?",
     correct_answer: "Bull Shark",
     incorrect_answers: [
@@ -89,7 +89,7 @@ db.shark_questions.insertMany([
     ]
   },
   {
-    category: "Shark",
+    category: "shark",
     question:"Which shark is top of the food chain?",
     correct_answer: "Great White Shark",
     incorrect_answers: [
@@ -99,7 +99,7 @@ db.shark_questions.insertMany([
     ]
   },
   {
-    category: "Shark",
+    category: "shark",
     question:"How may teeth does the Whale Shark have?",
     correct_answer: "3000",
     incorrect_answers: [
@@ -109,7 +109,7 @@ db.shark_questions.insertMany([
     ]
   },
   {
-    category: "Shark",
+    category: "shark",
     question:"What is a Great Hammerhead's favourite food?",
     correct_answer: "Stingrays",
     incorrect_answers: [
@@ -119,7 +119,7 @@ db.shark_questions.insertMany([
     ]
   },
   {
-    category: "Shark",
+    category: "shark",
     question:"Where in the world can Blue Shark be found?",
     correct_answer: "Worldwide",
     incorrect_answers: [
@@ -129,7 +129,7 @@ db.shark_questions.insertMany([
     ]
   },
   {
-    category: "Shark",
+    category: "shark",
     question:"Which shark is the biggest?",
     correct_answer: "Whale Shark",
     incorrect_answers: [
@@ -139,7 +139,7 @@ db.shark_questions.insertMany([
     ]
   },
   {
-    category: "Shark",
+    category: "shark",
     question:"Where does the Tiger Shark get it's name?",
     correct_answer: "It has black stripes on it's body when it is young",
     incorrect_answers: [
@@ -149,7 +149,7 @@ db.shark_questions.insertMany([
     ]
   },
   {
-    category: "Shark",
+    category: "shark",
     question:"What type of feeder is a Whale Shark?",
     correct_answer: "Filter",
     incorrect_answers: [
