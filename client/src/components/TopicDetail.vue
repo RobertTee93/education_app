@@ -5,8 +5,7 @@
     <p>{{ item.fact }}</p>
     <p>{{ item.size }}</p>
     <p>{{ item.diet }}</p>
-    <p>{{ item.population }}</p>
-    <p>{{ item.location }}</p>
+    <p>{{ item.habitat }}</p>
     <button v-on:click="resetSelected">Show all</button>
   </div>
 </template>
