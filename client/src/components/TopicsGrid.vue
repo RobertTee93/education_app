@@ -1,7 +1,7 @@
 <template lang="html">
     <div id="TopicsItems">
         <topic-item v-for="(item,index) in topicItems" :key="index" :item="item"/>
-  <button v-on:click="startQuiz(topicItems[0].category)">Start Quiz</button>
+  <button v-on:click="startQuiz(topicItems[0].category)">Quiz</button>
     </div>
 </template>
 
@@ -17,6 +17,7 @@ export default {
     methods: {
          startQuiz(category){
         eventBus.$emit("start-quiz", category)
+        eventBus.$emit("quiz-started")
       }
     }
 

@@ -4,15 +4,18 @@
 
     <start-page v-if="!topicItems"></start-page>
 
-    <topics-grid v-if="!selectedItem && !quizStarted" :topicItems="topicItems"></topics-grid>
+    <topics-grid v-if="!selectedItem && !quizStarted && topicItems" :topicItems="topicItems"></topics-grid>
 
     <topic-detail v-if="selectedItem && !quizStarted" :item="selectedItem"></topic-detail>
+
+    <topic-quiz v-if="categorySelected" :categorySelected="categorySelected"></topic-quiz>
 
   </div>
 
 </template>
 
 <script>
+import TopicQuiz from "./components/TopicQuiz.vue"
 import TopicDetail from "./components/TopicDetail.vue"
 import TopicsGrid from "./components/TopicsGrid.vue"
 import StartPage from "./components/StartPage.vue"
@@ -56,7 +59,8 @@ export default {
     TopicNav,
     StartPage,
     TopicsGrid,
-    TopicDetail
+    TopicDetail,
+    TopicQuiz
   },
   methods: {
     resetQuiz(){
