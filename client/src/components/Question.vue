@@ -1,10 +1,11 @@
 <template lang= "html">
   <div>
-    <p>{{question.question}}</p>
-    <p v-if="correctAnswer === null" v-for="answer in answers" v-on:click="checkAnswer(answer)">{{answer}}</p>
-    <p v-if="correctAnswer">Correct!</p>
-    <p v-if="correctAnswer === false">Sorry Wrong Answer the correct Answer was {{ question.correct_answer }}!</p>
-    <button v-if="counter < 6 && currentAnswer" v-on:click="nextQuestion">Next Question</button>
+    <p v-if="!quizFinished">{{question.question}}</p>
+    <p v-if="correctAnswer === null && !quizFinished" v-for="answer in answers" v-on:click="checkAnswer(answer)">{{answer}}</p>
+    <p v-if="correctAnswer && !quizFinished">Correct!</p>
+    <p v-if="correctAnswer === false && !quizFinished">Sorry Wrong Answer the correct Answer was {{ question.correct_answer }}!</p>
+    <button v-if="currentAnswer && !quizFinished" v-on:click="nextQuestion">Next Question</button>
+    <p v-if="quizFinished">You scored {{ score }} out of 6! Well Done!</p>
   </div>
 </template>
 
@@ -12,17 +13,22 @@
 import {eventBus} from "../main.js"
 export default {
   name: "Question",
-  props: ["question", "answers", "counter"],
+  props: ["question", "answers", "counter", "score"],
   data(){
     return {
       correctAnswer: null,
-      currentAnswer: null
+      currentAnswer: null,
+      quizFinished: false
     }
   },
   methods:{
     nextQuestion(){
       eventBus.$emit("next-question")
       this.correctAnswer = null;
+      eventBus.$on("quiz-finished", () => {
+        this.quizFinished = true
+      })
+      this.currentAnswer = null
     },
     checkAnswer(answer){
       this.currentAnswer = answer
