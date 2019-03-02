@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <button v-on:click="fetchQuestions">Start Quiz</button>
-    <question v-if="currentQuestion" :question="currentQuestion"></question>
+    <question v-if="currentQuestion" :answers="currentAnswers" :question="currentQuestion"></question>
   </div>
 
 </template>
@@ -15,6 +15,7 @@ export default {
     return {
       allQuestions: null,
       currentQuestions: [],
+      currentAnswers: [],
       score: 0,
       currentQuestion: null
     }
@@ -43,8 +44,17 @@ export default {
 
       }
     },
+    getCurrentAnswers(){
+      let answersArray = []
+      answersArray = this.currentQuestion.incorrect_answers
+      answersArray.push(this.currentQuestion.correct_answer)
+      this.currentAnswers = answersArray
+    },
     getNextQuestion(){
       this.currentQuestion = this.currentQuestions.pop()
+      this.getCurrentAnswers()
+      eventBus.$emit("new-answer")
+
     }
   },
   components: {
