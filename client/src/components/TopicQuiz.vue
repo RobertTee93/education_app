@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <button v-on:click="fetchQuestions">Start Quiz</button>
-
+    <question v-if="currentQuestion" :question="currentQuestion"/> 
   </div>
 
 </template>
@@ -29,6 +29,9 @@ export default {
         this.getCurrentQuestions()
         this.getNextQuestion()
       })
+      eventBus.$on("next-question",() =>{
+        this.getNextQuestion()
+      })
     },
     getCurrentQuestions(){
       while (this.currentQuestions.length < 6){
@@ -37,9 +40,13 @@ export default {
         this.currentQuestions.push(question)
       }
     },
+
     getNextQuestion(){
       this.currentQuestion = this.currentQuestions.pop()
     }
+  },
+  components:{
+    Question
   }
 }
 
