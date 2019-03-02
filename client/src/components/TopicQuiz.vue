@@ -27,14 +27,18 @@ export default {
       .then(questions => this.allQuestions = questions)
       .then(() => {
         this.getCurrentQuestions()
+        this.getNextQuestion()
       })
     },
     getCurrentQuestions(){
       while (this.currentQuestions.length < 6){
-         const question = this.allQuestions[Math.floor(Math.random()*this.allQuestions.length)]
-         this.allQuestions.pop(question)
-         this.currentQuestions.push(question)
+        const question = this.allQuestions[Math.floor(Math.random()*this.allQuestions.length)]
+        this.allQuestions.pop(question)
+        this.currentQuestions.push(question)
       }
+    },
+    getNextQuestion(){
+      this.currentQuestion = this.currentQuestions.pop()
     }
   }
 }
