@@ -159,3 +159,161 @@ db.shark_questions.insertMany([
     ]
   }
 ]);
+db.big_cats.insertMany([
+  {
+    category: "big_cat",
+    species: "Lion",
+    diet: "Lions usually hunt at night. Their prey includes antelopes, buffaloes, zebras, young elephants, rhinos, hippos, wild hogs, crocodiles and giraffes",
+    size: "2.5 metres",
+    picture: "",
+    habitat: "Lions live in a variety of habitats but prefer grassland, savanna, dense scrub, and open woodland.",
+    fact: "Lions sleep up to 21 hours a day."
+  },
+  {
+    category: "big_cat",
+    species: "Tiger",
+    diet: "Tiger's favourite food is deer and wild boar.",
+    size: "3.3 metres - the biggest of the cat species",
+    picture: "",
+    habitat: "Wild tigers mostly roam forests and savannas.",
+    fact: "A group of tigers is known as an ‘ambush'."
+  },
+  {
+    category: "big_cat",
+    species: "Leopard",
+    diet: "Leopards eat whatever they can catch this includes boars, deers and gazelles. SOmetimes they will eat fish, birds and rodents.",
+    size: "1.6 metres",
+    picture: "",
+    habitat: "These large cats can live in almost any type of habitat, including rainforests, deserts, woodlands, grassland savannas, forests, mountain habitats, coastal scrubs, shrub lands and swampy areas. In fact, leopards live in more places than any other large cat.",
+    fact: "Leopards are super springy, too, and can leap 6m forward through the air – that’s the length of three adults lying head to toe!"
+  },
+  {
+    category: "big_cat",
+    species: "Cheetah",
+    diet: "Cheetahs focus on prey that can be attacked at speed, their diet consists mainly of gazelles.",
+    size: "1.5 metres",
+    picture: "",
+    habitat: "Cheetah's habitats including shrublands, grasslands, savannahs, and temperate to hot deserts.",
+    fact: "The Cheetah is fastest land animal in the world, it can reach 112km/h in just three seconds – that's faster than a sports car accelerates!"
+  },
+  {
+    category: "big_cat",
+    species: "Cougars",
+    diet: "Cougars typically prey on deer, elk, moose, mountain goats, and wild sheep. Deer is their favourite prey.",
+    size: "2.4 metres",
+    picture: "",
+    habitat: "Cougars like forested areas in coastal swamps, rocky cliffs and mountain ranges as their habitat.",
+    fact: "The Cougar cannot roar like other big cats."
+  },
+  {
+    category: "big_cat",
+    species: "Jaguar",
+    diet: "Jaguars eat anything they can catch including crocodiles, snakes, monkeys, deer, turtles, eggs, frogs and fish.",
+    size: "2 metres",
+    picture: "",
+    habitat: "Jaguars prefer wet lowland habitats, swampy savannas or tropical rain forests. ",
+    fact: "The Jaguar is the 3rd largest of the big cats after the tiger and the lion."
+    }
+]);
+db.cat_questions.insertMany([
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    category: "big_cat",
+    question:"",
+    correct_answer: "",
+    incorrect_answers: [
+      "",
+      "",
+      ""
+    ]
+  }
+]);
