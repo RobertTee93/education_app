@@ -36,3 +36,38 @@ export default {
 	}
 }
 </script>
+
+<style lang="css" scoped>
+
+div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 20px;
+}
+
+button {
+	width: 250px;
+	height: 80px;
+	background-color: #03A9F4;
+	box-shadow: 0px 9px 17px black;
+	border: black 1px solid;
+	border-radius: 5px;
+	font-size: 30px;
+	text-shadow: -1px 1px 9px black;
+	color: white;
+	margin: 10px 5px;
+}
+
+button:hover {
+	background-color: #ff0740;
+	cursor: -webkit-grab; cursor: grab;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+</style>

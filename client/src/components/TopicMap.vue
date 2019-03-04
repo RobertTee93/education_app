@@ -32,7 +32,6 @@ export default {
         center: [0, 0],
         zoom: 0,
         dragging: true,
-        minZoom: 0.7,
         maxBounds: this.bounds,
         scrollWheelZoom: false
       })
@@ -65,10 +64,10 @@ export default {
 <style lang="css" scoped>
 
 #myMap {
-  height: 400px;
-  width: 350px;
+  height: 256px;
+  width: 500px;
   border-radius: 30px;
-  background-color: red;
+  background-color: #72b6e7;
 }
 
 </style>
