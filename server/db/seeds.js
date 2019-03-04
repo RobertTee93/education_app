@@ -215,7 +215,7 @@ db.big_cats.insertMany([
     fact: "The Jaguar is the 3rd largest of the big cats after the tiger and the lion."
     }
 ]);
-db.cat_questions.insertMany([
+db.big_cat_questions.insertMany([
   {
     category: "big_cat",
     question:"Which big cat cannot roar?",
