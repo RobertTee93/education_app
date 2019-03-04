@@ -33,7 +33,8 @@ export default {
         zoom: 0,
         dragging: true,
         minZoom: 0.7,
-        maxBounds: this.bounds
+        maxBounds: this.bounds,
+        scrollWheelZoom: false
       })
 
     },
