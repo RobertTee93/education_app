@@ -20,6 +20,6 @@ h1{
   font-size: 125px;
   color: rgba(232, 242, 33, 0.81);
   text-align: center;
-  margin: auto;
+  margin: 50px 100px;
 }
 </style>
