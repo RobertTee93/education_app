@@ -94,6 +94,7 @@ export default {
 
 body {
     background-color: #30f138;
+    margin: 0;
 }
 
 </style>
