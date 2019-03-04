@@ -1,7 +1,9 @@
 <template lang="html">
 	<div id="topic-nav">
+		<button v-on:click="HomePage()">Home</button>
 		<button v-on:click="fetchDataSharks()">Sharks</button>
 		<button v-on:click="fetchDataBigCats()">Big Cats</button>
+		<button v-on:click="startMathQuiz()">Math Quiz</button>
 	</div>
 </div>
 </template>
@@ -21,7 +23,16 @@ export default {
 			fetch("http://localhost:3000/api/big_cats")
 			.then(res => res.json())
 			.then(big_cats => eventBus.$emit('topic', big_cats));
+		},
+
+		startMathQuiz(){
+		eventBus.$emit('math-quiz');
+		},
+
+		HomePage(){
+			eventBus.$emit('home-page')
 		}
+
 	}
 }
 </script>

@@ -51,7 +51,19 @@ export default {
 
     eventBus.$on("topic-selected", () => {
       this.resetQuiz()
+    });
+
+    eventBus.$on("math-quiz", () => {
+      this.catergorySelected = "math"; 
+      this.quizStarted = true;
+    });
+
+    eventBus.$on("home-page", () => {
+      this.resetQuiz ();
+      this.topicItems = false;
+      this.selectedItem = null;
     })
+
 
 
   },
