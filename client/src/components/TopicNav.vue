@@ -9,16 +9,13 @@
 <script>
 import { eventBus } from '../main.js';
 
-
 export default {
-	props: ["sharks"],
+	props: ["sharks", "big_cats"],
 	methods: {
 		fetchDataSharks(){
 			fetch("http://localhost:3000/api/sharks")
 			.then(res => res.json())
 			.then(sharks => eventBus.$emit('topic', sharks));
-
-			eventBus.$emit("topic-selected")
 		},
 		fetchDataBigCats(){
 			fetch("http://localhost:3000/api/big_cats")
