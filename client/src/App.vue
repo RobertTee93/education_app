@@ -32,8 +32,8 @@ export default {
     }
   },
   mounted(){
-    eventBus.$on('sharks', (sharks) => {
-      this.topicItems = sharks
+    eventBus.$on('topic', (topic) => {
+      this.topicItems = topic
     });
 
     eventBus.$on("item-clicked", (item) => {
