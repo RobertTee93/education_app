@@ -15,11 +15,6 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../assets/Background-image.jpg);
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 h1{
   font-size: 125px;
@@ -28,4 +23,3 @@ h1{
   margin: auto;
 }
 </style>
-

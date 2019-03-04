@@ -95,6 +95,13 @@ export default {
 body {
     background-color: #30f138;
     margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    background: url(./assets/Background-image.jpg);
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 </style>
