@@ -168,7 +168,8 @@ db.big_cats.insertMany([
     size: "2.5 metres",
     picture: "src/assets/big_cats/Lion.jpeg",
     habitat: "Lions live in a variety of habitats but prefer grassland, savanna, dense scrub, and open woodland.",
-    fact: "Lions sleep upto 21 hours a day."
+    fact: "Lions sleep upto 21 hours a day.",
+    markers:[[-11.1691341,13.2820659],[-22.2706745,20.1926113],[-18.400794,26.7758232],[-6.3424199,30.4926098],[6.6112383,16.4392346],[7.8496852,25.197542],[21.1330012,70.7843614]]
   },
   {
     category: "big_cat",
@@ -177,7 +178,11 @@ db.big_cats.insertMany([
     size: "3.3 metres - the biggest of the cat species",
     picture: "src/assets/big_cats/Tiger.jpg",
     habitat: "Wild tigers mostly roam forests and savannas.",
-    fact: "A group of tigers is known as an ‘ambush'."
+    fact: "A group of tigers is known as an ‘ambush'.",
+    markers:[[20.7708612,73.7235274],[49.7971019,68.7730145],[-2.2761626,99.469767],
+    [4.1389113,105.1205635],[28.3838381,81.8863335],[13.0110467,96.9932673],
+    [23.4956277,88.1003508],[27.472449,89.314613],[34.4526073,86.0604216],
+    [15.7583278,101.4137798],[18.1674931,99.3631491]]
   },
   {
     category: "big_cat",
@@ -186,7 +191,16 @@ db.big_cats.insertMany([
     size: "1.6 metres",
     picture: "src/assets/big_cats/Leopard.jpeg",
     habitat: "These large cats can live in almost any type of habitat, including rainforests, deserts, woodlands, grassland savannas, forests, mountain habitats, coastal scrubs, shrub lands and swampy areas. In fact, leopards live in more places than any other large cat.",
-    fact: "Leopards are super springy, too, and can leap 6m forward through the air – that’s the length of three adults lying head to toe!"
+    fact: "Leopards are super springy, too, and can leap 6m forward through the air – that’s the length of three adults lying head to toe!",
+    markers:[[27.8194451,-7.3504867],[15.4114369,14.2385165],[26.8447929,26.3828145],
+    [11.8141204,42.0668988],[9.9308345,-13.7042942],[7.9039257,-3.2748003],
+    [17.5565521,3.5842581],[-22.8935941,13.8713943],[-1.9421909,29.3199604],
+    [14.4736139,-16.7611677],[5.2419987,41.8065454],[-26.5153368,30.9023259],
+    [-3.9615075,12.6858127],[8.6093398,-1.4119526],[1.372604,30.0588161],
+    [-18.9968794,26.9087779],[33.8615883,63.2114539],[34.4526073,86.0604216],
+    [23.4956277,88.1003508],[20.7708612,73.7235274],[18.1674931,99.3631491],
+    [18.801744,87.6391293],[4.1389113,105.1205635],[28.3838381,81.8863335],
+    [21.3968936,51.6566536],[30.2919588,64.8550108]]
   },
   {
     category: "big_cat",
@@ -195,7 +209,9 @@ db.big_cats.insertMany([
     size: "1.5 metres",
     picture: "src/assets/big_cats/cheetah.jpeg",
     habitat: "Cheetah's habitats including shrublands, grasslands, savannahs, and temperate to hot deserts.",
-    fact: "The Cheetah is fastest land animal in the world, it can reach 112km/h in just three seconds – that's faster than a sports car accelerates!"
+    fact: "The Cheetah is fastest land animal in the world, it can reach 112km/h in just three seconds – that's faster than a sports car accelerates!",
+    markers:[[-11.1691341,13.2820659],[-22.8935941,13.8713943],[-18.9968794,26.9087779],
+    [-22.2706745,20.1926113],[-34.2790647,18.2524283],[-18.400794,26.7758232]]
   },
   {
     category: "big_cat",
@@ -204,7 +220,9 @@ db.big_cats.insertMany([
     size: "2.4 metres",
     picture: "src/assets/big_cats/cougar.jpg",
     habitat: "Cougars like forested areas in coastal swamps, rocky cliffs and mountain ranges as their habitat.",
-    fact: "The Cougar cannot roar like other big cats."
+    fact: "The Cougar cannot roar like other big cats.",
+    markers:[[50.885088,-130.1181112],[36.2480024,-113.711586],
+    [-3.214841,-68.7640281]]
   },
   {
     category: "big_cat",
@@ -213,7 +231,9 @@ db.big_cats.insertMany([
     size: "2 metres",
     picture: "src/assets/big_cats/jaguar.jpg",
     habitat: "Jaguars prefer wet lowland habitats, swampy savannas or tropical rain forests. ",
-    fact: "The Jaguar is the 3rd largest of the big cats after the tiger and the lion."
+    fact: "The Jaguar is the 3rd largest of the big cats after the tiger and the lion.",
+    markers:[[36.2480024,-113.711586],[23.3140013,-111.6453834],
+    [-3.7630989,-69.4451362]]
     }
 ]);
 db.big_cat_questions.insertMany([
