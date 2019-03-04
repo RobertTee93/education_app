@@ -88,6 +88,10 @@ export default {
 
 <style lang="css">
 
+* {
+  font-family: 'Laila', serif;
+}
+
 body {
     background-color: #30f138;
 }
