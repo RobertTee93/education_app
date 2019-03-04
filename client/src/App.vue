@@ -86,5 +86,10 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
+
+body {
+    background-color: #30f138;
+}
+
 </style>
