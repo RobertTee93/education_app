@@ -54,7 +54,7 @@ export default {
     });
 
     eventBus.$on("math-quiz", () => {
-      this.catergorySelected = "math"; 
+      this.categorySelected = "math"; 
       this.quizStarted = true;
     });
 
