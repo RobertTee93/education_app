@@ -9,7 +9,8 @@ db.sharks.insertMany([
     size: "Female: 4.5 – 6.4 m (Adult), Male: 3.5 – 4 m (Adult)",
     picture: "src/assets/shark_pictures/Great_white_shark.jpg",
     habitat: "Great white sharks live in coastal and offshore water of between 12 to 24 degrees",
-    fact: "The great white is at the top of the food chain and has few threats in the ocean."
+    fact: "The great white is at the top of the food chain and has few threats in the ocean.",
+    markers:[[-35.327345,136.1008431],[34.5849117,19.3348983],[29.0185055,-118.4330882],[-46.986053,167.558006],[26.004858,-81.5987127]]
   },
   {
     category: "shark",
