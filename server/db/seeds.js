@@ -317,3 +317,105 @@ db.big_cat_questions.insertMany([
     ]
   }
 ]);
+db.math_questions.insertMany([
+  {
+    category: "math",
+    question:"6 X 7 ",
+    correct_answer: "42",
+    incorrect_answers: [
+      "46",
+      "35",
+      "49"
+    ]
+  },
+  {
+    category: "math",
+    question:"8 X 8 ",
+    correct_answer: "64",
+    incorrect_answers: [
+      "56",
+      "72",
+      "68"
+    ]
+  },
+  {
+    category: "math",
+    question:"5 X 9 ",
+    correct_answer: "45",
+    incorrect_answers: [
+      "50",
+      "40",
+      "43"
+    ]
+  },
+  {
+    category: "math",
+    question:"7 X 3 ",
+    correct_answer: "21",
+    incorrect_answers: [
+      "27",
+      "32",
+      "34"
+    ]
+  },
+  {
+    category: "math",
+    question:"4 X 8",
+    correct_answer: "32",
+    incorrect_answers: [
+      "20",
+      "28",
+      "36"
+    ]
+  },
+  {
+    category: "math",
+    question:"6 X 6",
+    correct_answer: "36",
+    incorrect_answers: [
+      "25",
+      "49",
+      "32"
+    ]
+  },
+  {
+    category: "math",
+    question:"11 x 11",
+    correct_answer: "121",
+    incorrect_answers: [
+      "111",
+      "101",
+      "122"
+    ]
+  },
+  {
+    category: "math",
+    question:"4 x 12",
+    correct_answer: "48",
+    incorrect_answers: [
+      "36",
+      "42",
+      "60"
+    ]
+  },
+  {
+    category: "math",
+    question:"10 x 10",
+    correct_answer: "100",
+    incorrect_answers: [
+      "90",
+      "80",
+      "110"
+    ]
+  },
+  {
+    category: "math",
+    question:"9 x 7",
+    correct_answer: "63",
+    incorrect_answers: [
+      "61",
+      "69",
+      "79"
+    ]
+  }
+  ]);

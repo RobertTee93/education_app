@@ -16,14 +16,18 @@ MongoClient.connect('mongodb://localhost:27017')
         const sharkQuestions = db.collection('shark_questions');
         const bigcatsCollection = db.collection('big_cats');
         const catQuestions = db.collection('big_cat_questions');
+        const mathQuestions = db.collection('math_questions');
         const sharksRouter = createRouter(sharksCollection);
         const sharkQuestionsRouter = createRouter(sharkQuestions);
         const bigcatsRouter = createRouter(bigcatsCollection);
         const catQuestionsRouter = createRouter(catQuestions);
+        const mathQuestionsRouter = createRouter(mathQuestions);
         app.use('/api/sharks', sharksRouter);
         app.use('/api/shark_questions',sharkQuestionsRouter);
         app.use('/api/big_cats', bigcatsRouter);
-        app.use('/api/big_cat_questions',catQuestionsRouter);
+        app.use('/api/big_cat_questions', catQuestionsRouter);
+        app.use('/api/math_questions', mathQuestionsRouter);
+
     })
 .catch(console.err);
 
