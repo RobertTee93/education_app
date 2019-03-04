@@ -2,7 +2,7 @@
   <div>
     <topic-nav></topic-nav>
 
-    <start-page v-if="!topicItems"></start-page>
+    <start-page v-if="!topicItems && !quizStarted"></start-page>
 
     <topics-grid v-if="!selectedItem && !quizStarted && topicItems" :topicItems="topicItems"></topics-grid>
 
@@ -34,6 +34,8 @@ export default {
   mounted(){
     eventBus.$on('topic', (topic) => {
       this.topicItems = topic
+      this.selectedItem = null
+      this.resetQuiz();
     });
 
     eventBus.$on("item-clicked", (item) => {
@@ -54,7 +56,7 @@ export default {
     });
 
     eventBus.$on("math-quiz", () => {
-      this.categorySelected = "math"; 
+      this.categorySelected = "math";
       this.quizStarted = true;
     });
 
