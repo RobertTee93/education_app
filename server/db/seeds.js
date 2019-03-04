@@ -10,7 +10,7 @@ db.sharks.insertMany([
     picture: "src/assets/shark_pictures/Great_white_shark.jpg",
     habitat: "Great white sharks live in coastal and offshore water of between 12 to 24 degrees",
     fact: "The great white is at the top of the food chain and has few threats in the ocean.",
-    markers:[[-35.327345,136.1008431],[34.5849117,19.3348983],[29.0185055,-118.4330882],[-46.986053,167.558006],[26.004858,-81.5987127]]
+    markers:[[-35.327345,136.1008431],[-34.5849117,19.3348983],[29.0185055,-118.4330882],[-46.986053,167.558006],[26.004858,-81.5987127]]
   },
   {
     category: "shark",
@@ -19,7 +19,8 @@ db.sharks.insertMany([
     size: "6m",
     picture: "src/assets/shark_pictures/great_hammerhead.jpg",
     habitat: "In tropical and warm waters worldwide, inhabiting coastal areas.",
-    fact: "The Great Hammerhead weighs about the same as a piano."
+    fact: "The Great Hammerhead weighs about the same as a piano.",
+    markers:[[0.1304846,-89.7100369],[1.8107632,103.4455052],[-30.8333392,30.3432544],[4.0061324,-81.6023659], [-16.1042863,176.0365091]]
   },
   {
     category: "shark",
@@ -28,7 +29,8 @@ db.sharks.insertMany([
     size: "5m",
     picture: "src/assets/shark_pictures/tiger_shark.jpg",
     habitat: "Tiger sharks found in tropical and warm water seas.",
-    fact: "Tiger sharks are named that way because of their tiger-like, black stripes that cover the body of young animals"
+    fact: "Tiger sharks are named that way because of their tiger-like, black stripes that cover the body of young animals",
+    markers:[[-18.390889,178.0942539],[26.004858,-81.5987127],[19.4848622,-99.1200503],[26.004858,-81.5987127]]
   },
   {
     category: "shark",
@@ -37,7 +39,8 @@ db.sharks.insertMany([
     size: "10m",
     picture: "src/assets/shark_pictures/whale_shark.jpg",
     habitat: "The whale shark inhabits all tropical and warm-temperate seas.",
-    fact: " Whale sharks have about 3,000 tiny teeth but they don't use those teeth to eat."
+    fact: " Whale sharks have about 3,000 tiny teeth but they don't use those teeth to eat.",
+    markers:[[12.9627144,123.4803871],[22.8959998,-109.9698899],[3.4986904,72.8939863],[7.81793,39.6089631],[26.859057,110.2513777]]
   },
   {
     category: "shark",
@@ -46,7 +49,8 @@ db.sharks.insertMany([
     size: "3.5m",
     picture: "src/assets/shark_pictures/bull_shark.jpg",
     habitat: "The bull shark is commonly found worldwide in coastal areas of warm oceans, in rivers and lakes.",
-    fact: "Bull sharks have the strongest bite of all the sharks"
+    fact: "Bull sharks have the strongest bite of all the sharks",
+    markers:[[19.4848622,-99.1200503,17],[11.5759659,-85.9167196],[-18.5922881,123.9113007],[-34.8388466,19.9985483]]
   },
   {
     category: "shark",
@@ -55,7 +59,8 @@ db.sharks.insertMany([
     size: "3m",
     picture: "src/assets/shark_pictures/blue_shark.jpg",
     habitat: "The blue shark is found worldwide in deep temperate and tropical water",
-    fact: "Blue sharks live in groups called Schools"
+    fact: "Blue sharks live in groups called Schools",
+    markers:[[-18.390889,178.0942539],[26.004858,-81.5987127],[19.4848622,-99.1200503],[26.004858,-81.5987127]]
     }
 ]);
 db.shark_questions.insertMany([
