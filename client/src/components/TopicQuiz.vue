@@ -32,6 +32,11 @@ export default {
         this.getCurrentQuestions()
         this.getNextQuestion()
       });
+
+      eventBus.$on("start-quiz", () => {
+        this.questionCounter = 0
+      })
+
       eventBus.$on("next-question",() =>{
        this.getNextQuestion()
      })
