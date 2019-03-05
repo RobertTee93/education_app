@@ -50,6 +50,7 @@ img {
 #facts span {
   font-size: 30px;
   text-decoration: underline;
+  display: block;
 }
 
 #facts {
