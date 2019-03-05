@@ -35,7 +35,7 @@ db.sharks.insertMany([
   {
     category: "shark",
     species: "Whale",
-    diet: "The Whale Shark is filter feeder. They only on plankton and small fishes",
+    diet: "The Whale Shark is filter feeder. They only feed on plankton and small fishes",
     size: "10m",
     picture: "src/assets/shark_pictures/whale_shark.jpg",
     habitat: "The whale shark inhabits all tropical and warm-temperate seas.",
@@ -140,7 +140,7 @@ db.shark_questions.insertMany([
     correct_answer: "Whale Shark",
     incorrect_answers: [
       "Tiger Shark",
-      "Great White",
+      "Great White Shark",
       "Blue Shark"
     ]
   },
@@ -196,7 +196,7 @@ db.big_cats.insertMany([
     size: "1.6 metres",
     picture: "src/assets/big_cats/Leopard.jpeg",
     habitat: "These large cats can live in almost any type of habitat, including rainforests, deserts, woodlands, grassland savannas, forests, mountain habitats, coastal scrubs, shrub lands and swampy areas. In fact, leopards live in more places than any other large cat.",
-    fact: "Leopards are super springy, too, and can leap 6m forward through the air – that’s the length of three adults lying head to toe!",
+    fact: "Leopards are super springy and can leap 6m forward through the air – that’s the length of three adults lying head to toe!",
     markers:[[27.8194451,-7.3504867],[15.4114369,14.2385165],[26.8447929,26.3828145],
     [11.8141204,42.0668988],[9.9308345,-13.7042942],[7.9039257,-3.2748003],
     [17.5565521,3.5842581],[-22.8935941,13.8713943],[-1.9421909,29.3199604],
@@ -220,7 +220,7 @@ db.big_cats.insertMany([
   },
   {
     category: "big_cat",
-    species: "Cougars",
+    species: "Cougar",
     diet: "Cougars typically prey on deer, elk, moose, mountain goats, and wild sheep. Deer is their favourite prey.",
     size: "2.4 metres",
     picture: "src/assets/big_cats/cougar.jpg",
