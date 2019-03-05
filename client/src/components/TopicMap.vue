@@ -12,6 +12,7 @@ export default {
       map: null,
       tileLayer: null,
       bounds: null,
+      marker: null
     }
   },
   components: {
@@ -26,6 +27,8 @@ export default {
     this.getLayers()
     this.getMarker(this.item.markers)
     this.map.fitBounds(this.bounds.getBounds())
+
+
   },
   methods: {
     getMap(){
@@ -49,8 +52,7 @@ export default {
     },
     getMarker(markers){
       for (let marker of markers){
-        console.log(marker);
-       L.marker(marker).addTo(this.map)
+       L.marker(marker).addTo(this.map).bindPopup(this.item.species).openPopup();
       }
     },
     getBounds(){
