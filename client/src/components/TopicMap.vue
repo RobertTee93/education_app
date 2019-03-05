@@ -11,7 +11,7 @@ export default {
     return {
       map: null,
       tileLayer: null,
-      bounds: null
+      bounds: null,
     }
   },
   components: {
@@ -25,15 +25,15 @@ export default {
     this.getMap()
     this.getLayers()
     this.getMarker(this.item.markers)
+    this.map.fitBounds(this.bounds.getBounds())
   },
   methods: {
     getMap(){
       this.map = L.map('myMap', {
         center: [0, 0],
-        zoom: 0,
+        zoom: 1,
         dragging: true,
-        maxBounds: this.bounds,
-        scrollWheelZoom: false
+        scrollWheelZoom: true
       })
 
     },
@@ -53,9 +53,13 @@ export default {
       }
     },
     getBounds(){
-      const corner1 = L.latLng(79.41624, -129.375)
-      const corner2 = L.latLng(-79.370503, 168.856312)
-      this.bounds = L.latLngBounds(corner1, corner2)
+      this.bounds = this.item.markers
+      // const corner1 = L.latLng(79.41624, -129.375)
+      // const corner2 = L.latLng(-79.370503, 168.856312)
+      // this.bounds = L.latLngBounds(corner1, corner2)
+    },
+    setControls(){
+       layerControl = L.control.layers(null, mapOverlays, {position:'bottomcenter'}).addTo(this.map);
     }
   }
 }
@@ -64,10 +68,12 @@ export default {
 <style lang="css" scoped>
 
 #myMap {
-  height: 256px;
-  width: 500px;
-  border-radius: 30px;
+  height: 430px;
+  width: 600px;
+  border-radius: 1000px;
   background-color: #72b6e7;
+  border: black solid 2px;
+  box-shadow: 0px 9px 20px 6px black;
 }
 
 </style>
