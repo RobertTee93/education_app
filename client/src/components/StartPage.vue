@@ -18,8 +18,9 @@ div {
 }
 h1{
   font-size: 125px;
-  color: rgba(232, 242, 33, 0.81);
+  color: rgba(244, 236, 11, 0.879);
   text-align: center;
+  text-shadow: 5px 5px rgb(2, 28, 48);
   margin: 50px 100px;
 }
 </style>
