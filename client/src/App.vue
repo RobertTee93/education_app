@@ -101,7 +101,10 @@ body {
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
 }
 
 </style>
