@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <h2 v-if="questionCounter < 6"> Current Score: {{ this.score }}</h2>
+    <h2 v-if="questionCounter < 6"> Current Score: <span>{{ this.score }}</span></h2>
     <button id="quiz-start" v-if="!allQuestions" v-on:click="fetchQuestions">Start Quiz</button>
     <question v-if="currentQuestion" :answers="currentAnswers" :question="currentQuestion" :counter="questionCounter" :score="score"></question>
   </div>
@@ -127,6 +127,10 @@ div {
   background-color: #af3027;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+span {
+  color: #84f501;
 }
 
 </style>
