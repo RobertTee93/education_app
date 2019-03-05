@@ -29,6 +29,7 @@ export default {
       .then(results => results.json())
       .then(questions => this.allQuestions = questions)
       .then(() => {
+        this.questionCounter = 0
         this.getCurrentQuestions()
         this.getNextQuestion()
       });

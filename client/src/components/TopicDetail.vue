@@ -15,7 +15,7 @@
     </div>
     <topic-map :item="item"></topic-map>
     <button v-on:click="resetSelected">Show all</button>
-  
+
   </div>
 </template>
 
@@ -96,6 +96,7 @@ button{
 	text-shadow: -1px 1px 9px black;
 	color: white;
 	margin: 10px 5px;
+  margin-top: 30px;
 }
 button:hover {
 	background-color: #07ff24;
