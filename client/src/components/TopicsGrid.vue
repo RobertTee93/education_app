@@ -4,6 +4,9 @@
         <topic-item v-for="(item,index) in topicItems" :key="index" :item="item"/>
   </div>
   <button id="quiz-button" v-on:click="startQuiz(topicItems[0].category)">Quiz</button>
+  <audio controls autoplay>
+    <source :src="topicItems[0].sound" type="audio/mpeg">
+    </audio>
     </div>
 </template>
 
@@ -61,6 +64,10 @@ export default {
     background-color: #af3027;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+audio{
+  display: none;
 }
 
 </style>

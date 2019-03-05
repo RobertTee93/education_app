@@ -28,7 +28,7 @@ div {
   box-shadow: 0px 4px 20px black;
   margin: 30px 10px;
   text-align: center;
-  background-color: #333;
+  background-color: #1312129e;
   color: white;
   text-shadow: -1px 1px 9px black;
   border-radius: 10px;
