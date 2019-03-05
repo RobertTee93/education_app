@@ -22,11 +22,9 @@ export default {
   },
   props: ["item"],
   mounted(){
-    this.getBounds()
     this.getMap()
     this.getLayers()
     this.getMarker(this.item.markers)
-    this.map.fitBounds(this.bounds.getBounds())
 
 
   },
@@ -54,15 +52,6 @@ export default {
       for (let marker of markers){
        L.marker(marker).addTo(this.map).bindPopup(this.item.species).openPopup();
       }
-    },
-    getBounds(){
-      this.bounds = this.item.markers
-      // const corner1 = L.latLng(79.41624, -129.375)
-      // const corner2 = L.latLng(-79.370503, 168.856312)
-      // this.bounds = L.latLngBounds(corner1, corner2)
-    },
-    setControls(){
-       layerControl = L.control.layers(null, mapOverlays, {position:'bottomcenter'}).addTo(this.map);
     }
   }
 }
