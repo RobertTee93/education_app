@@ -5,10 +5,10 @@
     </div>
     <img :src="item.picture" alt="no image available">
     <div id="facts">
-    <p>Fact: {{ item.fact }}</p>
-    <p>Size: {{ item.size }}</p>
-    <p>Diet: {{ item.diet }}</p>
-    <p>Habitat: {{ item.habitat }}</p>
+    <p><span>Fact:</span> {{ item.fact }}</p>
+    <p><span>Size:</span> {{ item.size }}</p>
+    <p><span>Diet:</span> {{ item.diet }}</p>
+    <p><span>Habitat:</span> {{ item.habitat }}</p>
     </div>
     <div id="locations">
     <h2>World Locations</h2>
@@ -45,6 +45,11 @@ img {
   position: center;
   margin: 10px;
   box-shadow: 0px 10px 20px 7px black;
+}
+
+#facts span {
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 #facts {
