@@ -114,4 +114,8 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+h1 {
+  margin: 0;
+}
 </style>
