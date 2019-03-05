@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <h2 v-if="questionCounter < 6"> Current Score: {{ this.score }}</h2>
-    <button v-if="!allQuestions" v-on:click="fetchQuestions">Start Quiz</button>
+    <button id="quiz-start" v-if="!allQuestions" v-on:click="fetchQuestions">Start Quiz</button>
     <question v-if="currentQuestion" :answers="currentAnswers" :question="currentQuestion" :counter="questionCounter" :score="score"></question>
   </div>
 
@@ -95,4 +95,38 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+h2 {
+  font-size: 70px;
+  margin: 0;
+}
+
+div {
+  text-align: center;
+}
+
+#quiz-start {
+  margin-top: 50px;
+  height: 350px;
+  width: 750px;
+  font-size: 100px;
+  background-color: #ff0740;
+  box-shadow: 0px 9px 17px black;
+  border: black 1px solid;
+  border-radius: 5px;
+  text-shadow: -1px 1px 9px black;
+  color: white;
+}
+
+#quiz-start:hover {
+  	background-color: #84f501;
+  	cursor: -webkit-grab; cursor: grab;
+}
+
+#quiz-start:active {
+  background-color: #af3027;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 </style>
