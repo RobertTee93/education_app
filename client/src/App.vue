@@ -41,10 +41,12 @@ export default {
 
     eventBus.$on("item-clicked", (item) => {
       this.selectedItem = item
+      window.scrollTo(0, 0)
     });
 
     eventBus.$on("reset-selected", () => {
       this.selectedItem = null;
+      window.scrollTo(0, 0)
     });
 
     eventBus.$on("start-quiz", (category)=>{
