@@ -36,6 +36,7 @@ export default {
       this.topicItems = topic
       this.selectedItem = null
       this.resetQuiz();
+      window.scrollTo(0, 0)
     });
 
     eventBus.$on("item-clicked", (item) => {
@@ -101,7 +102,10 @@ body {
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
 }
 
 </style>
