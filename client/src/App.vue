@@ -36,6 +36,7 @@ export default {
       this.topicItems = topic
       this.selectedItem = null
       this.resetQuiz();
+      window.scrollTo(0, 0)
     });
 
     eventBus.$on("item-clicked", (item) => {
