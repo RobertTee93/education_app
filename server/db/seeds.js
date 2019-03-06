@@ -247,7 +247,7 @@ db.big_cat_questions.insertMany([
   {
     category: "big_cat",
     question:"Which big cat cannot roar?",
-    correct_answer: "Jaguar",
+    correct_answer: "Cougar",
     incorrect_answers: [
       "Tiger",
       "Lion",
