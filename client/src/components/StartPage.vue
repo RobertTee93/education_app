@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <h1>Educational App for Kids</h1>
+    <h1>Learning Hub</h1>
   </div>
 </template>
 
