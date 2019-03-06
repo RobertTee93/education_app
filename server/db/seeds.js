@@ -10,7 +10,8 @@ db.sharks.insertMany([
     picture: "src/assets/shark_pictures/Great_white_shark.jpg",
     habitat: "Great white sharks live in coastal and offshore water of between 12 to 24 degrees",
     fact: "The great white is at the top of the food chain and has few threats in the ocean.",
-    markers:[[-35.327345,136.1008431],[-34.5849117,19.3348983],[29.0185055,-118.4330882],[-46.986053,167.558006],[26.004858,-81.5987127]]
+    markers:[[-35.327345,136.1008431],[-34.5849117,19.3348983],[29.0185055,-118.4330882],[-46.986053,167.558006],[26.004858,-81.5987127]],
+    sound: "src/assets/sounds/Jaws-theme-song.mp3"
   },
   {
     category: "shark",
@@ -174,7 +175,8 @@ db.big_cats.insertMany([
     picture: "src/assets/big_cats/Lion.jpeg",
     habitat: "Lions live in a variety of habitats but prefer grassland, savanna, dense scrub, and open woodland.",
     fact: "Lions sleep upto 21 hours a day.",
-    markers:[[-11.1691341,13.2820659],[-22.2706745,20.1926113],[-18.400794,26.7758232],[-6.3424199,30.4926098],[6.6112383,16.4392346],[7.8496852,25.197542],[21.1330012,70.7843614]]
+    markers:[[-11.1691341,13.2820659],[-22.2706745,20.1926113],[-18.400794,26.7758232],[-6.3424199,30.4926098],[6.6112383,16.4392346],[7.8496852,25.197542],[21.1330012,70.7843614]],
+    sound: "src/assets/sounds/lion-roar.mp3"
   },
   {
     category: "big_cat",
